@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+    <title>Event Listings | Auxilium</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/listing.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/listingnavbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% set main_url = '' %}
+	<script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+	<p style="position:absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); color:white; font-size: 3rem; animation: fadeInGoUpC 1s">Give us a second...</p>
+    <button class="topbutton" onclick="topFunction()" id="topBtn" title="Go to top"><span>Top</span></button>
+    <!-- <button class="toggle-btn light-mode" id="switchtheme" title="Switch Modes"><span>Light Mode</span></button> -->
+
+	<div id="map" style="width: 100vw; height:100vh; min-width: 100vw; max-height: 100vh; position:absolute; left:0; top:0;"></div>
+
+	<script>window.mainUrl = '{{main_url}}'</script>
+	<script src="{{ url_for('static', filename='js/listing.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/listingnav.js') }}"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Y4aH13RIaYjD-jq3tvpcUGktNrdzIWw&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

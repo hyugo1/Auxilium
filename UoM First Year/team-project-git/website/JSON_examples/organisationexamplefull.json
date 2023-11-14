@@ -1,0 +1,27 @@
+{
+    "Name": "Google",
+    "Email": "google@gamil.com",
+    "PhoneNumber": "0799999999999",
+    "Address":"Sillicon Valley",
+    "Edit":true,
+    "SensitiveData": "This data is sensitive",
+    "Listings":[
+            {
+            "Title": "Shovelling Snow ",
+            "Organisation": "Google",
+            "Location" : "Sillicon Valley",
+            "DateStart": "12/03/23",
+            "DateEnd": "19/03/23",
+            "Description": "Helping to clear out snow in Google's driveway"
+            
+            }
+             ,    {
+                "Title": "Cleaner for hospital",
+                "Organisation": "Google",
+                "Location" : "Sillicon Valley",
+                "PostingDate": "21/03/23",
+                "VolunteeringDate": "01/04/23",
+                "Description": "Clean the hospital ward"                
+                }
+                ]
+}

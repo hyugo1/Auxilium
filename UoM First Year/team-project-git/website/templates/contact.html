@@ -1,0 +1,27 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+    <title>Contact Us | Auxilium</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body class = "form-body">
+  <!-- <button class="toggle-btn light-mode" id="switchtheme" title="Switch Modes"><span>Light Mode</span></button> -->
+  <!-- <button id="back-btn" onclick="window.location.href='/homepage'"button></button> -->
+  <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+  <figure class='loginbg'></figure>
+
+  <div id = "login-body" class = "login-body">
+      <div id = "login-box" class = "login-box">
+          <div id = "login-container" class = "login-container"> </div>
+          <div id = "login-message" class = "login-message"> </div>
+      </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/forms/form.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/forms/contactform.js') }}"></script>
+</body>

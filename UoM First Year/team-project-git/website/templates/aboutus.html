@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us | Auxilium</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+   
+    <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+
+</head>
+
+<body>
+    {% set main_url = '' %}
+
+    <div id="main-body" class="main-body"></div>
+    <script type="text/javascript"> 
+        window.mainUrl = '{{main_url}}'; 
+    </script>
+  
+    <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+    <!-- About Start -->
+    <div class ="aboutus-container">
+        <h1 class="aboutus">About Us</h1>
+    </div>
+        <div class="logo-container">
+            <img class="logo" src="../static/images/AUXILIUM_LOGO.png">
+        </div>
+            <h1 class="display-5">Creating a volunteering app for all</h1>
+                    </div>
+                    <div class="about-container">
+                        <p class="about">Welcome to Auxilium, where you can find opportunities to make a difference in your community. 
+                        Our mission is to connect passionate volunteers with reputable organizations that align with their interests and skills. 
+                        We believe that volunteering is a powerful way to create positive change and build stronger, more connected communities. 
+                        By giving your time and skills, you can make a meaningful impact on the lives of others and help create a better world. 
+                        Our website offers a user-friendly platform where volunteers can easily browse and search for volunteer opportunities that match their preferences.
+                        Whether you are interested in working with children, animals, the environment, or any other cause, we have a wide range of organizations that need your help.
+                        We work with a variety of local nonprofits and community-based organizations that are dedicated to making a difference in the world. Our partners are carefully vetted to ensure that they are ethical, well-managed, and effective at achieving their mission.
+                        At our volunteering webpage, we believe in the power of collective action. By working together, we can create positive change and make our communities stronger and more vibrant. So why not join us today and start making a difference in your community?</p>
+                        <br>
+                        <br>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Team Start -->
+    <br>
+    <h1 class="MeetTeam">The Team:</h1>
+    <br>
+        <div class="profile-container">
+            <h4 class="text-white">Benjamin Baker</h4>
+            <h4 class="text-white"> Madhavan Citalamangalam Kumaran</h4>
+            <h4 class="text-white"> Muhammad Khan</h4>
+            <h4 class="text-white"> Hyugo Senzai</h4>
+            <h4 class="text-white"> Abubakar Tafida</h4>
+            <h4 class="text-white"> Joseph Hayes</h4>
+        </div>
+        <br>
+    </div>
+</div>
+    <!-- Team End -->
+</body>
+
+<footer>
+    <style>
+        footer {
+    background-color: #f5f5f5 !important;
+    color: #777 !important;
+    padding: 40px !important;
+    margin-top: 50px !important;
+    }
+
+    footer a {
+    color: #777 !important;
+    }
+
+    footer a:hover {
+    color: #333 !important;
+    }
+
+    footer ul.list-inline li {
+    display: inline-block !important;
+    margin-right: 15px !important;
+    }
+
+
+    /* 1800 */
+    @media (max-width: 2000px) {
+    footer .container {
+        text-align: center !important;
+    }
+
+    footer .col-sm-6 {
+        margin-bottom: 15px !important;
+    }
+}
+    </style>
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-6">
+         <p>&copy; 2023 Auxilium. All Rights Reserved.</p>
+       </div>
+       <div class="col-sm-6 text-right">
+         <ul class="list-inline">
+           <li><a href="/privacypage">Privacy Policy</a></li>
+           <li><a href="/termspage">Terms of Use</a></li>
+           <li><a href="/contactus">Contact Us</a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+
+   <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+ </footer>
+
+</html>

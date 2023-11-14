@@ -1,0 +1,77 @@
+    {
+      "Organisations":  
+        [{
+        "Name": "Google",
+        "Email": "google@gamil.com",
+        "PhoneNumber": "0799999999999",
+        "Address":"Sillicon Valley",
+        "Listings":[
+                {
+                "Title": "Shovelling Snow ",
+                "Organisation": "Google",
+                "Location" : "Sillicon Valley",
+                "DateStart": "12/03/23",
+                "DateEnd": "19/03/23",
+                "Description": "Helping to clear out snow in Google's driveway"
+                
+                }
+                ,    {
+                    "Title": "Cleaner for hospital",
+                    "Organisation": "Google",
+                    "Location" : "Sillicon Valley",
+                    "PostingDate": "21/03/23",
+                    "VolunteeringDate": "01/04/23",
+                    "Description": "Clean the hospital ward"                
+                    }
+                    ]
+        },
+        {
+            "Name": "Facebook",
+            "Email": "facebook@gamil.com",
+            "PhoneNumber": "07888888888",
+            "Address":"Sillicon Valley",
+            "Listings":[
+                    {
+                    "Title": "Shovelling Dirt ",
+                    "Organisation": "FaceBook",
+                    "Location" : "Sillicon Valley",
+                    "DateStart": "12/03/24",
+                    "DateEnd": "19/03/24",
+                    "Description": "Helping to clear out dirt in FaceBook's driveway"
+                    
+                    }
+                    ,    {
+                        "Title": "Driver for orphanage",
+                        "Organisation": "FaceBook",
+                        "Location" : "Sillicon Valley",
+                        "PostingDate": "21/05/23",
+                        "VolunteeringDate": "03/06/23",
+                        "Description": "drive kids"                
+                        }
+                        ]
+        },
+        {
+            "Name": "Apple",
+            "Email": "apple@gamil.com",
+            "PhoneNumber": "07777777777",
+            "Address":"Sillicon Valley",
+            "Listings":[]
+        },
+        {
+            "Name": "Nike",
+            "Email": "nike@gamil.com",
+            "PhoneNumber": "07666666666666",
+            "Address":"Oregon",
+            "Listings":[
+                    {
+                    "Title": "Riding Tractors ",
+                    "Organisation": "Nike",
+                    "Location" : "Oregon",
+                    "DateStart": "12/03/23",
+                    "DateEnd": "19/03/23",
+                    "Description": "Helping to farmers"
+                    
+                    }
+                        ]
+        }]
+}

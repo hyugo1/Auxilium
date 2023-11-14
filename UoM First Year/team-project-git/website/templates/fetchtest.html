@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <title>Auxilium </title>
+        <!-- <script src="js/requests.js"></script> -->
+    </head>
+    <body>
+        <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+
+        <input type="text" id="pin"> 
+        <button id ="submitbutton" onclick="submit()">SUBMIT</button>
+        <button id ="submitforgotpassword" onclick="resetpassword()">forgot Password</button>
+
+        <script>
+            async function submit(){
+                let pinnum=document.getElementById("pin")
+
+                let json={pin:pinnum.value}
+
+                let status =await PostData("authentication/verify_email",json)
+
+                console.log(status.status)
+                
+                if(status.status=="error"){
+                    console.log("error:" + status.error)
+                }
+                
+            }
+
+            async function resetpassword(){
+                let response = await ForgotPasswordEmail("waqeezaman23@gmail.com")
+                console.log(response)
+            }
+            //FilterListings({}).then(r=>console.log(r));
+            // filter listings example
+            filter={"ListingID":48}
+            FilterListings(filter).then(listing=>console.log(listing.Listings))
+
+           
+        </script>
+
+
+        <img src="/get_listing_icon/0" alt="cant find">
+    </body>
+</html> 
+ 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+    <title>Policy | Auxilium</title>
+    <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+</head>
+<body>
+	
+{% set main_url = '' %}
+<script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+<script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+<!--top-ribbon OBSOLETE, keeping here incase we want one-->
+<!--<div id="top-ribbon" class="top-ribbon"></div>-->
+<div id="main-body" class="main-body"></div>
+
+<!--Process flask variables in the html script, and send them to js-->
+<script type="text/javascript"> 
+    window.mainUrl = '{{main_url}}'; 
+</script>
+<br>
+<br>
+<br>
+<header>
+	<h1>Privacy Policy</h1>
+</header>
+<main>
+	<div class="privacypolicy">
+	<section>
+		<h2>Introduction</h2>
+		<p>Welcome, which is operated by Auxilium. These terms of service ("Terms") apply to your use of the App, including any updates or new features we make available to you.
+			By accessing or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the App.. Auxilium is committed to protecting your privacy and ensuring that your personal information is kept safe and secure. 
+			This privacy policy outlines the type of information we collect, how we use it, and the steps we take to protect your privacy.</p>
+	</section>
+	<section>
+		<h2>Information We Collect</h2>
+		<p>We may collect personal information from you, such as your name, email address, and phone number when you sign up for our app. We may also collect non-personal information such as your IP address, browser type, and operating system to improve our services.</p>
+	</section>
+	<section>
+		<h2>How We Use Your Information</h2>
+		<p>We use your personal information to provide and improve our services, communicate with you, and send you updates and notifications about our app. We may also use non-personal information for research and analytics purposes.</p>
+	</section>
+	<section>
+		<h2>Sharing Your Information</h2>
+		<p>We do not sell or rent your personal information to third parties. However, we may share your information with trusted third-party service providers who assist us in providing and improving our services. We may also disclose your information in response to legal requests or to protect our rights or property.</p>
+	</section>
+	<section>
+		<h2>Security Measures</h2>
+		<p>We take appropriate measures to protect your personal information from unauthorized access, use, or disclosure. We use secure servers, firewalls, and encryption technologies to safeguard your data.</p>
+	</section>
+	<section>
+		<h2>Changes to Privacy Policy</h2>
+		<p>We may update this privacy policy from time to time. Any changes will be posted on this page, and we encourage you to review the policy periodically.</p>
+	</section>
+</div>
+</main>
+
+
+</body>
+<footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-6">
+		  <p>&copy; 2023 Auxilium. All Rights Reserved.</p>
+		</div>
+		<div class="col-sm-6 text-right">
+		  <ul class="list-inline">
+			<li><a href="/privacypage">Privacy Policy</a></li>
+			<li><a href="/termspage">Terms of Use</a></li>
+			<li><a href="/contactus">Contact Us</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  
+	<script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+  </footer>
+  
+  </html>

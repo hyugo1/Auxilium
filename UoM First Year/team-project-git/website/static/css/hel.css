@@ -1,0 +1,109 @@
+/* Set global styles */
+
+body {
+    font-family: quicksand, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    background-color:azure;
+  }
+
+/* Style for the logo image */
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+/* Style for the logo container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    overflow-y: hidden;
+  }
+  
+  h1.aboutus {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .aboutus-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    /* justify-content: space-between; */
+    text-align: justify;
+    align-items: center;
+  }
+  
+  
+  /* Style for the main heading */
+  .display-5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  
+  /* Style for the paragraph text */
+  .about {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 50px 10% 0;
+  }
+  
+  /* Style for the Award Winning heading */
+  .award-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  /* Style for the Award description */
+  .award-description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+
+  /* Style the Team section */
+
+  .MeetTeam {
+    text-align: center;
+    font-size: 3rem;
+    /* margin-left: 9rem; */
+  }
+
+  .text-white{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 991.98px) {
+    .about {
+      padding: 60px 0;
+    }
+    
+    .team {
+      padding: 60px 0;
+    }
+    
+    .navbar .navbar-brand {
+      font-size: 20px;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+      font-size: 14px;
+    }
+  }

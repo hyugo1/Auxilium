@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>Organisation Login | Auxilium</title>
+
+        <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+
+      
+    </head>
+    <body class = "form-body">
+        {% set main_url = '' %}
+        <figure class='loginbg'></figure>
+
+        <div id = "login-body" class = "login-body">
+            <div id = "login-box" class = "login-box">
+                <div id = "login-container" class = "login-container"> </div>
+                <div id = "login-message" class = "login-message"> </div>
+            </div>
+        </div>
+
+
+        <!-- {% if failed %}
+            <h3 style="color:red;">Invalid Credentials</h3>
+        {% endif %} -->
+
+        <script type="text/javascript"> 
+            window.mainUrl = JSON.parse('{{main_url | tojson}}'); 
+        </script>
+        
+        <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/forms/form.js') }}"></script>  
+        <script src="{{ url_for('static', filename='js/forms/loginform.js') }}"></script>
+    </body>
+</html> 
+ 
+

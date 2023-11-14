@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verification | Auxilium</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/verifyemail.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}"> -->
+</head>
+<body>
+    <button id="Back" onclick="goBack()"><span>Back</span></button>
+    <!-- <div class="warning-box">
+        <span class="close-btn">&times;</span>
+        <h3>Warning</h3>
+        <p>Your unsaved changes will be lost. Are you sure you want to leave this page?</p>
+        <div class="btn-container">
+          <button class="cancel-btn">Cancel</button>
+          <button class="confirm-btn">Leave</button>
+        </div>
+      </div> -->
+      
+	<div class="container">
+		<!-- <h1>Email Verification</h1> -->
+		<p>Please enter the verification code that was sent to your email address.</p>
+			<!-- <input id="pin" type="text" placeholder="Verification code" required> -->
+            <div id="pin-input">
+                <input id="pin1" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+                <input id="pin2" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+                <input id="pin3" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+                <input id="pin4" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+                <input id="pin5" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+                <input id="pin6" autocomplete="off" type="text" maxlength="1" pattern="[0-9]" />
+              </div>
+              
+              <p id="pin-error" style="color:red"></p>
+			<button id="verify-button" onclick="SubmitPin()" class="verify-button"><span>Verify</span></button>
+		<p class="resend-link">Didn't receive the code? <button id="resend-button"onclick="ResendEmail()"><span>Resend</span></button></p>
+        <div class="emailfooter">
+            <img id="footerimage" src="../../static/images/city.png" alt="Image">
+        </div>
+	</div>
+
+	<script src="{{ url_for('static', filename='js/verifyemail.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+</body>
+</html>

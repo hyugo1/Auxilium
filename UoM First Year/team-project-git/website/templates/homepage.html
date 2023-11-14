@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/82011235a2.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+  <title>Homepage | Auxilium</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+</head>
+
+<body style="overflow-x: hidden;">
+
+  {% set main_url = '' %}
+  <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+  <div id="main-body" class="main-body"></div>
+
+  <script src="{{ url_for('static', filename='js/body.js') }}"></script>
+
+</body>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>&copy; 2023 Auxilium. All Rights Reserved.</p>
+      </div>
+      <div class="col-sm-6 text-right">
+        <ul class="list-inline">
+          <li><a href="/privacypage">Privacy Policy</a></li>
+          <li><a href="/termspage">Terms of Use</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+</footer>
+
+</html>

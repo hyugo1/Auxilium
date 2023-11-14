@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>Organisation Login | Auxilium</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+        <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+
+        <script>
+            // if a user tries to sign up and there is an error, this error is returned in errormessage 
+
+            // potential errors : 
+            // no error = ""
+            // username or password incorrect = "Username or Password incorrect"
+            // username already taken = "Username already taken"
+            var error = '{{ errormessage }}';
+        </script>
+    </head>
+    <body class = "form-body">
+        {% set main_url = '' %}
+        <figure class='loginbg'></figure>
+
+        <div id = "login-body" class = "login-body">
+            <div id = "login-box" class = "login-box">
+                <div id = "login-container" class = "login-container"> </div>
+                <div id = "login-message-signup" class = "login-message"> </div>
+            </div>
+        </div>
+
+        <script type="text/javascript"> 
+            window.mainUrl = JSON.parse('{{main_url | tojson}}'); 
+        </script>
+        
+        <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>    
+        <script src="{{ url_for('static', filename='js/forms/form.js') }}"></script>  
+        <script src="{{ url_for('static', filename='js/forms/signupform.js') }}"></script>
+    </body>
+</html> 
+ 

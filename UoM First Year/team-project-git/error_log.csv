@@ -1,0 +1,1089 @@
+Date,Type,Error,Function,Trace
+"03/17/2023, 01:01:17",KeyError,'Content',login,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    function(*args,**kwargs)
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 27, in login
+    organisations = json.loads(db.GetAllOrganisations())[""Content""]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 01:03:03",TypeError,Object of type date is not JSON serializable,search,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    function(*args,**kwargs)
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 22, in search
+    listings=db.SearchListings(searchTerm=searchterm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\databaseHandler.py"", line 64, in Wrapper
+    return json.dumps(dctWrapper, indent=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 326, in _iterencode_list
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+"
+"03/17/2023, 01:03:09",TypeError,Object of type date is not JSON serializable,search,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    function(*args,**kwargs)
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 22, in search
+    listings=db.SearchListings(searchTerm=searchterm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\databaseHandler.py"", line 64, in Wrapper
+    return json.dumps(dctWrapper, indent=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 326, in _iterencode_list
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+"
+"03/17/2023, 01:07:01",NameError,name 'b' is not defined,login,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 18, in login
+    a=b
+      ^
+NameError: name 'b' is not defined
+"
+"03/17/2023, 01:07:53",NameError,name 'b' is not defined,login,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 18, in login
+    a=b
+      ^
+NameError: name 'b' is not defined
+"
+"03/17/2023, 01:13:14",NameError,name 'b' is not defined,home,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\pages.py"", line 10, in home
+    a=b
+      ^
+NameError: name 'b' is not defined
+"
+"03/17/2023, 01:16:42",TemplateNotFound,hoepage.html,home,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 28, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\pages.py"", line 11, in home
+    return render_template('hoepage.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\loaders.py"", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: hoepage.html
+"
+"03/17/2023, 01:46:13",TemplateNotFound,hoepage.html,home,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 28, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\pages.py"", line 10, in home
+    return render_template('hoepage.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\loaders.py"", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: hoepage.html
+"
+"03/17/2023, 01:50:22",AttributeError,'str' object has no attribute 'keys',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 37, in filter_listings
+    listings={""Listings"":Filter(request.json,db.GetAllListings())}
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 192, in Filter
+    if(isMatch(filter,record)):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 174, in isMatch
+    fields=list(values.keys())
+                ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+"
+"03/17/2023, 01:52:37",TypeError,Object of type date is not JSON serializable,get_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 45, in get_listings
+    allListings=json.loads(db.GetAllListings())[""Content""]
+                           ^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\databaseHandler.py"", line 64, in Wrapper
+    return json.dumps(dctWrapper, indent=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 326, in _iterencode_list
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+"
+"03/17/2023, 01:53:04",TypeError,Object of type date is not JSON serializable,get_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 45, in get_listings
+    allListings=json.loads(db.GetAllListings())[""Content""]
+                           ^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\databaseHandler.py"", line 64, in Wrapper
+    return json.dumps(dctWrapper, indent=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 326, in _iterencode_list
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+"
+"03/17/2023, 01:54:41",TypeError,Object of type date is not JSON serializable,filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 37, in filter_listings
+    listings={""Listings"":Filter(request.json,db.GetAllListings()[""Content""])}
+                                             ^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\databaseHandler.py"", line 64, in Wrapper
+    return json.dumps(dctWrapper, indent=4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 326, in _iterencode_list
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 406, in _iterencode_dict
+    yield from chunks
+  File ""D:\Python_311\Lib\json\encoder.py"", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\encoder.py"", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable
+"
+"03/17/2023, 01:59:15",TypeError,"string indices must be integers, not 'str'",filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 37, in filter_listings
+    listings={""Listings"":Filter(request.json,db.GetAllListings()[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+"
+"03/17/2023, 02:08:13",BadRequest,400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.,get_listing,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 60, in get_listing
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                ^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\wrappers\request.py"", line 540, in json
+    return self.get_json()
+           ^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\wrappers\request.py"", line 571, in get_json
+    return self.on_json_loading_failed(None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\wrappers.py"", line 128, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\wrappers\request.py"", line 611, in on_json_loading_failed
+    raise BadRequest(
+werkzeug.exceptions.BadRequest: 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+"
+"03/17/2023, 02:08:55",KeyError,0,get_listing,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 65, in get_listing
+    return listings[0]
+           ~~~~~~~~^^^
+KeyError: 0
+"
+"03/17/2023, 13:14:33",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:22:29",KeyError,'Content',get_organisations,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 80, in get_organisations
+    allOrganisations=json.loads(db.GetAllOrganisations())[""Content""]
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:23:52",KeyError,'Content',get_organisations,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 80, in get_organisations
+    allOrganisations=json.loads(db.GetAllOrganisations())[""Content""]
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:39:59",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:44:02",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:48:52",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:49:08",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 13:58:56",KeyError,'Content',get_organisations,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 80, in get_organisations
+    allOrganisations=json.loads(db.GetAllOrganisations())[""Content""]
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 14:15:24",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:28",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:38",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:38",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:40",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:40",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:40",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:40",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:41",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:42",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:48",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:49:48",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:51:03",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:51:22",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:52:13",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:53:47",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:53:47",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:56:04",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/17/2023, 14:56:04",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/joe/GitRepos/COMP10120-Labs_d99547jh/project/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/19/2023, 00:29:43",TypeError,argument of type 'int' is not iterable,get_listing,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 64, in get_listing
+    listings=Filter(filter,json.loads(db.GetAllListings())[""Content""])
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 220, in Filter
+    if(isMatch(filter,record)):
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 203, in isMatch
+    if not filterdata in values[field]:
+TypeError: argument of type 'int' is not iterable
+"
+"03/19/2023, 00:29:57",TypeError,argument of type 'int' is not iterable,get_listing,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 64, in get_listing
+    listings=Filter(filter,json.loads(db.GetAllListings())[""Content""])
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 220, in Filter
+    if(isMatch(filter,record)):
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 203, in isMatch
+    if not filterdata in values[field]:
+TypeError: argument of type 'int' is not iterable
+"
+"03/19/2023, 00:30:05",TypeError,argument of type 'int' is not iterable,get_listing,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 64, in get_listing
+    listings=Filter(filter,json.loads(db.GetAllListings())[""Content""])
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 220, in Filter
+    if(isMatch(filter,record)):
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 203, in isMatch
+    if not filterdata in values[field]:
+TypeError: argument of type 'int' is not iterable
+"
+"03/19/2023, 00:32:13",TypeError,argument of type 'int' is not iterable,get_listing,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 64, in get_listing
+    listings=Filter(filter,json.loads(db.GetAllListings())[""Content""])
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 220, in Filter
+    if(isMatch(filter,record)):
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 203, in isMatch
+    if not filterdata in values[field]:
+TypeError: argument of type 'int' is not iterable
+"
+"03/21/2023, 14:00:54",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/21/2023, 14:01:13",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/21/2023, 14:02:44",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'Content'
+"
+"03/21/2023, 16:10:54",AttributeError,module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData',get_my_organisation,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 191, in get_my_organisation
+    dbresponse=json.loads(db.GetPrivateOrganisationData(orgID))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData'
+"
+"03/21/2023, 16:11:02",AttributeError,module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData',get_my_organisation,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 191, in get_my_organisation
+    dbresponse=json.loads(db.GetPrivateOrganisationData(orgID))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData'
+"
+"03/21/2023, 16:11:12",AttributeError,module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData',get_my_organisation,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 191, in get_my_organisation
+    dbresponse=json.loads(db.GetPrivateOrganisationData(orgID))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData'
+"
+"03/21/2023, 16:11:22",AttributeError,module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData',get_my_organisation,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 191, in get_my_organisation
+    dbresponse=json.loads(db.GetPrivateOrganisationData(orgID))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'website.databaseHandler' has no attribute 'GetPrivateOrganisationData'
+"
+"03/21/2023, 16:20:52",AttributeError,'dict' object has no attribute 'email',forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 215, in forgot_password_email
+    elif (not ValidEmail(request.json.email)):
+                         ^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'email'
+"
+"03/21/2023, 16:23:20",ImportError,cannot import name 'forgot_password_page' from 'website.pages' (D:\Auxiliium\proj\y9_first_group_project\website\pages.py),forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 219, in forgot_password_email
+    from website.pages import forgot_password_page
+ImportError: cannot import name 'forgot_password_page' from 'website.pages' (D:\Auxiliium\proj\y9_first_group_project\website\pages.py)
+"
+"03/21/2023, 16:24:43",BuildError,Could not build url for endpoint 'forgot_password_page'. Did you mean 'pages.forgot_password_page' instead?,forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 224, in forgot_password_email
+    link = url_for(""forgot_password_page"",_external=True)+""?token=""+token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\helpers.py"", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\routing\map.py"", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'forgot_password_page'. Did you mean 'pages.forgot_password_page' instead?
+"
+"03/21/2023, 16:27:30",BuildError,Could not build url for endpoint 'forgot_password_email'. Did you mean 'authentication.forgot_password_email' instead?,forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 224, in forgot_password_email
+    link = url_for(""forgot_password_email"",_external=True)+""?token=""+token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\helpers.py"", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\routing\map.py"", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'forgot_password_email'. Did you mean 'authentication.forgot_password_email' instead?
+"
+"03/21/2023, 16:30:45",KeyError,1,add_listing,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 155, in add_listing
+    print(status[1])
+          ~~~~~~^^^
+KeyError: 1
+"
+"03/22/2023, 10:34:08",UnboundLocalError,local variable 'file_path' referenced before assignment,get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 109, in get_listing_images
+    print(file_path)
+UnboundLocalError: local variable 'file_path' referenced before assignment
+"
+"03/22/2023, 10:35:04",AttributeError,module 'website.databaseHandler' has no attribute 'DonwloadFileViaID',get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 109, in get_listing_images
+    r, file_path = db.DonwloadFileViaID(i['DocumentID'],'website/static/temp-images/' + str(lid) + str(random.randint(0,100000000)) + '.png')
+AttributeError: module 'website.databaseHandler' has no attribute 'DonwloadFileViaID'
+"
+"03/22/2023, 10:35:35",ValueError,too many values to unpack (expected 2),get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 109, in get_listing_images
+    r, file_path = db.DownloadFileViaID(i['DocumentID'],'website/static/temp-images/' + str(lid) + str(random.randint(0,100000000)) + '.png')
+ValueError: too many values to unpack (expected 2)
+"
+"03/22/2023, 10:36:18",NameError,name 'file_path' is not defined,get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 111, in get_listing_images
+    print(file_path)
+NameError: name 'file_path' is not defined
+"
+"03/22/2023, 10:37:35",NameError,name 'file_path' is not defined,get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 111, in get_listing_images
+    print(file_path)
+NameError: name 'file_path' is not defined
+"
+"03/22/2023, 10:44:22",NameError,name 'listing_images_urls' is not defined,get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 122, in get_listing_images
+    listing_images_urls.append(encoded_string)
+NameError: name 'listing_images_urls' is not defined
+"
+"03/22/2023, 10:50:52",TypeError,"can only concatenate str (not ""bytes"") to str",get_listing_images,"Traceback (most recent call last):
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/home/madhav/GitRepos/y9_first_group_project/website/data.py"", line 118, in get_listing_images
+    print('data:base64,' + encoded_string[:1000])
+TypeError: can only concatenate str (not ""bytes"") to str
+"
+"03/22/2023, 10:56:15",BuildError,Could not build url for endpoint 'forgot_password_page'. Did you mean 'pages.forgot_password_page' instead?,forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 225, in forgot_password_email
+    link = url_for(""forgot_password_page"",_external=True)+""?token=""+token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\helpers.py"", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\app.py"", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\werkzeug\routing\map.py"", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'forgot_password_page'. Did you mean 'pages.forgot_password_page' instead?
+"
+"03/22/2023, 10:57:25",TypeError,"can only concatenate list (not ""str"") to list",forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 227, in forgot_password_email
+    SendEmail(""Auxilium Forgot Password"",""Hi here is the link for you to reset your password ""+ link,request.json[""email""])
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 116, in SendEmail
+    mail.send(message)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 492, in send
+    message.send(connection)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 427, in send
+    connection.send(self)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 181, in send
+    if message.has_bad_headers():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not ""str"") to list
+"
+"03/22/2023, 10:58:21",TypeError,"can only concatenate list (not ""str"") to list",forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 227, in forgot_password_email
+    SendEmail(""Auxilium Forgot Password"",""Hi here is the link for you to reset your password ""+ link,request.json[""email""])
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 116, in SendEmail
+    mail.send(message)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 492, in send
+    message.send(connection)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 427, in send
+    connection.send(self)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 181, in send
+    if message.has_bad_headers():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not ""str"") to list
+"
+"03/22/2023, 11:02:33",TypeError,"can only concatenate str (not ""type"") to str",forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 227, in forgot_password_email
+    print(""TTTTYPEE ""+ type(request.json[""email""]))
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not ""type"") to str
+"
+"03/22/2023, 11:03:03",TypeError,"can only concatenate list (not ""str"") to list",forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 228, in forgot_password_email
+    SendEmail(""Auxilium Forgot Password"",""Hi here is the link for you to reset your password ""+ link,request.json[""email""])
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 116, in SendEmail
+    mail.send(message)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 492, in send
+    message.send(connection)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 427, in send
+    connection.send(self)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 181, in send
+    if message.has_bad_headers():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not ""str"") to list
+"
+"03/22/2023, 11:04:49",TypeError,"can only concatenate list (not ""str"") to list",forgot_password_email,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 228, in forgot_password_email
+    SendEmail(""Auxilium Forgot Password"",""Hi here is the link for you to reset your password ""+ link,request.json[""email""])
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 116, in SendEmail
+    mail.send(message)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 492, in send
+    message.send(connection)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 427, in send
+    connection.send(self)
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 181, in send
+    if message.has_bad_headers():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask_mail.py"", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not ""str"") to list
+"
+"03/22/2023, 11:19:07",TypeError,forgot_password() missing 1 required positional argument: 'token',forgot_password,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: forgot_password() missing 1 required positional argument: 'token'
+"
+"03/22/2023, 11:19:44",KeyError,'token',forgot_password,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 239, in forgot_password
+    if request.json[""token""] == session[""forgot_password""][""token""]:
+       ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+"
+"03/22/2023, 11:22:41",KeyError,'token',forgot_password,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 239, in forgot_password
+    if request.json[""token""] == session[""forgot_password""][""token""]:
+       ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+"
+"03/22/2023, 11:23:26",KeyError,'token',forgot_password,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 239, in forgot_password
+    print(request.json[""token""])
+          ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+"
+"03/22/2023, 11:24:07",KeyError,'token',forgot_password,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 239, in forgot_password
+    print(request.json[""token""])
+          ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+"
+"03/22/2023, 13:05:56",FileNotFoundError,[Errno 2] No such file or directory: 'website/static/temp-images/listingid-72-45597770.png',get_listing_images,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 116, in get_listing_images
+    with open(store_name, ""rb"") as image_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'website/static/temp-images/listingid-72-45597770.png'
+"
+"03/22/2023, 13:11:53",TemplateNotFound,temp/forgotpassword.html,forgot_password_page,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 28, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\pages.py"", line 123, in forgot_password_page
+    return render_template(""temp/forgotpassword.html"")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\environment.py"", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\jinja2\loaders.py"", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\site-packages\flask\templating.py"", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: temp/forgotpassword.html
+"
+"03/22/2023, 14:14:40",FileNotFoundError,[Errno 2] No such file or directory: 'templates/email/TEXT/verifyemail.txt',org_signup,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 114, in org_signup
+    verificationemail= ReadTextFile(""templates/email/TEXT/verifyemail.txt"")##""Dear ""+ orgname + "" here is your pin to verify your account: ""+ org[""pin""]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 122, in ReadTextFile
+    with open(filename,""r"") as file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'templates/email/TEXT/verifyemail.txt'
+"
+"03/22/2023, 14:15:34",FileNotFoundError,[Errno 2] No such file or directory: 'website/templates/email/TEXT/verifyemail.txt',org_signup,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 114, in org_signup
+    verificationemail= ReadTextFile(""website/templates/email/TEXT/verifyemail.txt"")##""Dear ""+ orgname + "" here is your pin to verify your account: ""+ org[""pin""]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 122, in ReadTextFile
+    with open(filename,""r"") as file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'website/templates/email/TEXT/verifyemail.txt'
+"
+"03/22/2023, 14:17:51",NameError,name 'db' is not defined,org_signup,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 92, in org_signup
+    if not UniqueEmail(email):
+           ^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 306, in UniqueEmail
+    if GetOrgFromEmail(email)==True:
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 86, in GetOrgFromEmail
+    organisations = json.loads(db.GetAllPrivateOrganisationData())[""Content""]
+                               ^^
+NameError: name 'db' is not defined
+"
+"03/22/2023, 14:18:30",FileNotFoundError,[Errno 2] No such file or directory: 'website/templates/Email/TEXT/verifyemail.txt',org_signup,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\authentication.py"", line 114, in org_signup
+    verificationemail= ReadTextFile(""website/templates/Email/TEXT/verifyemail.txt"")##""Dear ""+ orgname + "" here is your pin to verify your account: ""+ org[""pin""]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\Utilities.py"", line 122, in ReadTextFile
+    with open(filename,""r"") as file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'website/templates/Email/TEXT/verifyemail.txt'
+"
+"03/24/2023, 13:13:21",TypeError,"the JSON object must be str, bytes or bytearray, not dict",add_listing,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 164, in add_listing
+    lid=json.loads(AddListing(request.json))['Content']#request.json)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+"
+"03/24/2023, 13:15:18",TypeError,"the JSON object must be str, bytes or bytearray, not dict",add_listing,"Traceback (most recent call last):
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Auxiliium\proj\y9_first_group_project\website\data.py"", line 164, in add_listing
+    lid=json.loads(AddListing(request.json))['Content']#request.json)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""D:\Python_311\Lib\json\__init__.py"", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+"
+"03/24/2023, 15:51:06",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/24/2023, 15:51:12",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"
+"03/24/2023, 16:05:39",FileNotFoundError,[Errno 2] No such file or directory: 'website/static/temp-images/listingid-86-1998011.png',get_listing_images,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 121, in get_listing_images
+    with open(store_name, ""rb"") as image_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'website/static/temp-images/listingid-86-1998011.png'
+"
+"04/19/2023, 15:22:43",KeyError,'Content',filter_listings,"Traceback (most recent call last):
+  File ""/Users/hugo/y9_first_group_project/website/ErrorHandler.py"", line 11, in handler
+    return function(*args,**kwargs)
+  File ""/Users/hugo/y9_first_group_project/website/data.py"", line 39, in filter_listings
+    listings={""Listings"":Filter(request.json,json.loads(db.GetAllListings())[""Content""])}
+KeyError: 'Content'
+"

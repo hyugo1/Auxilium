@@ -1,0 +1,243 @@
+
+@keyframes fadeInGoUp {
+  0% {
+      opacity: 0;
+      transform: translateX(-0%) translateY(10%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(-0%) translateY(-0%);
+  }
+}
+
+.sideBarHost{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 100;
+  position:absolute;
+  transition: 1s all;
+}
+
+.sideBarHost button{
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 98;
+  transform: translateX(-10%);
+}
+
+.sidebar-toggle.is-closed i{
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+.sidebar-toggle i{
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+#listing-icon{
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.info-div{
+  width: 100%;
+  background-color: seagreen;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+
+  animation: fadeInGoUp 0.5s;
+}
+
+.sideBar h1{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sideBar h2{
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.desc-div{
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 0;
+
+  animation: fadeInGoUp 1s;
+}
+
+.desc-div h1{
+  color: black;
+}
+
+
+.desc-div h2{
+  color:dimgrey;
+}
+.sideBar{
+  min-height: 100vh;
+  width: 20rem;
+  background-color: white ;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow:hidden;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+
+
+.sideBarHost.is-closed {
+  transition: 1s all;
+  transform: translateX(-20rem);
+}
+
+.listingslides {
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: content-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: content-box;
+  /* Firefox, other Gecko */
+  box-sizing: content-box;
+  /* Opera/IE 8+ */
+  overflow-y: visible;
+  overflow-x: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.listingslides-container {
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: visible;
+  width: 100%;
+  padding-bottom: 0;
+}
+.listingslides-container:after {
+  content: "";
+  position: absolute;
+  z-index: 103;
+  bottom: 0;
+  pointer-events: none;
+  left: 92%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+  width: 10%;
+  height: 100%;
+}
+
+.listingslides-container::before {
+  content: "";
+  position: absolute;
+  z-index: 103;
+  bottom: 0;
+  pointer-events: none;
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white 100%);
+  width: 10%;
+  height: 100%;
+}
+
+.listingslides img {
+  object-fit: cover;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 0.2);
+}
+
+.listingslides figure {
+  transform: scale(1);
+  display: flex;
+  transition: transform 0.3s ease-out, filter 0.3s ease;
+  transform-origin: center;
+  filter: brightness(70%);
+  width: 100%;
+  overflow: visible;
+  margin: 2px;
+}
+
+.listingslides .active-slide {
+  transform: scale(1.1);
+  display: flex;
+  transition: transform 0.3s ease-out, filter 0.3s ease;
+  transform-origin: center;
+  filter: brightness(100%);
+  width: 100%;
+  overflow: visible;
+}
+
+.iconcontainer {
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  z-index: 200;
+  overflow: visible;
+  position: absolute;
+  left: 0;
+  margin: 0.4rem;
+  animation: fadeInGoUp 1s;
+  cursor: pointer;
+}
+
+.circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 2s ease-out forwards;
+
+}
+
+svg {
+  overflow: visible;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  transition: all .2s ease-in-out;
+
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+  z-index: 200;
+}
+
+@keyframes stroke {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes strokeOut {
+  to {
+      stroke-dashoffset: 1000;
+  }
+}

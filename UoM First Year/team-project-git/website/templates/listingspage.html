@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
+    <title>Listings Page | Auxilium</title>
+    <link rel="stylesheet" href="https://use.typekit.net/nzc8ezk.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+</head>
+
+<body style="overflow: hidden; height:100%; background-color: gainsboro;">
+
+    {% set main_url = '' %}
+    <script src="{{ url_for('static', filename='js/requests.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+
+    <div id="listings-container" class="listings-container">
+        <div id="listings-container-host" class="listings-container-host">
+        </div>
+    </div>
+
+    <!--Process flask variables in the html script, and send them to js-->
+    <script type="text/javascript">
+        window.mainUrl = JSON.parse('{{main_url | tojson}}'); 
+    </script>
+
+    <script src="{{ url_for('static', filename='js/listings.js') }}"></script>
+
+</body>
+
+</html>

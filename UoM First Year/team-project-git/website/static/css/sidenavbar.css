@@ -1,0 +1,147 @@
+:root {
+    --overlap: -6rem;
+}
+
+html {
+    margin: 0;
+
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
+
+    min-width: 100%;
+    /* because the content might only be a few words */
+    min-height: 100%;
+    /* because the content might only be a few words */
+}
+
+.sidebar-toggle {
+    position: relative;
+    z-index: 1;
+    border: 4px solid gray;
+    background-color: #444444;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 1rem;
+}
+
+.sidebar-toggle.is-closed {
+    transform: translateX(.3em) rotate(0deg);
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+    left: 0%;
+    margin-top: 0.5rem;
+    transition: .7s;
+}
+
+.navbar.is-closed {
+    transform: translateX(-8rem);
+}
+
+.navbar-elements {
+    display: flex;
+    flex-direction: column;
+    background-color: darkseagreen;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    float: right;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar a:hover {
+    filter: brightness(95%);
+    cursor: pointer;
+}
+
+.navbar a.active:not(:hover) {
+    background-color: darkseagreen;
+    filter: brightness(95%);
+    color: seagreen;
+}
+
+.navbar .search-container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin-left: 1rem;
+    min-width: 15rem;
+}
+
+.navbar .search-container ::placeholder {
+    text-align: center;
+    color: gray;
+    font-family: quicksand, sans-serif;
+    font-size: 1rem;
+}
+
+.navbar .search-container form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar input[type=search] {
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.3rem;
+    color: gray;
+    font-family: quicksand, sans-serif;
+
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.navbar .search-container button {
+    background: white;
+    border: none;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    pointer-events: none;
+}

@@ -1,0 +1,11 @@
+Hi, 
+
+We are excited to have you join Auxilium!
+
+In order to verify your account please enter the following pin:
+
+{{pin}}
+
+Thanks 
+
+The Auxilium Team 

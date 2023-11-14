@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Privacy Policy</title>
+	<link rel="stylesheet" href="y9_first_group_project/website/static/css/master.css">
+</head>
+<body>
+	<header>
+		<h1>Terms and Conditions</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Introduction</h2>
+			<p>These Terms and Conditions ("Agreement") govern the use of the volunteering web app ("Service") provided by [Company Name] ("Company"), accessible at [Web app URL]. By using the Service, you agree to comply with and be bound by this Agreement. If you do not agree to the terms and conditions of this Agreement, you should not use the Service.</p>
+		</section>
+		<section>
+			<h2>Service</h2>
+			<p>The Service provides a platform that allows users to find and participate in volunteering opportunities in their community.</p>
+		</section>
+		<section>
+			<h2>User Accounts</h2>
+			<p>In order to use the Service, users must create an account. Users must provide accurate, complete, and up-to-date registration information. Users are responsible for maintaining the confidentiality of their account login credentials.</p>
+		</section>
+		<section>
+			<h2>Content</h2>
+			<p>Users of the Service may post and share content, including but not limited to text, images, videos, and audio. By posting content on the Service, users grant the Company a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, modify, and distribute the content.</p>
+		</section>
+		<section>
+			<h2>Prohibited Activities</h2>
+			<p>Users of the Service must not engage in any activities that violate any applicable laws, regulations, or the rights of others. Prohibited activities include, but are not limited to, the following:</p>
+            <ul>
+                <li>Posting or sharing content that is defamatory, discriminatory, or offensive.</li>
+                <li>Impersonating another person or entity.</li>
+                <li>Spamming or soliciting other users.</li>
+                <li>Hacking, cracking, or otherwise attempting to gain unauthorized access to the Service.</li>
+                <li>Distributing malware or other malicious software.</li>
+              </ul>
+              
+		</section>
+		<section>
+			<h2>User Content</h2>
+			<p>Users of the Service must comply with the following rules of conduct:</p>
+            <ul>
+                <li>Use the Service in a manner that is consistent with its intended purpose.</li>
+                <li>Treat other users with respect and dignity.</li>
+                <li>Follow the rules and guidelines of any volunteering opportunities in which they participate.</li>
+              </ul>
+              
+		</section>
+        <section>
+			<h2>Termination</h2>
+			<p>The Company may terminate or suspend access to the Service at any time, without notice, for any reason. Users may also terminate their account at any time.</p>
+		</section>
+        <section>
+			<h2>Warranty Disclaimer</h2>
+			<p>The Service is provided "as is" and without warranty of any kind. The Company disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose.</p>
+		</section>
+        <section>
+			<h2>Limitation of Liability</h2>
+			<p>The Company shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of the Service.</p>
+		</section>
+        <section>
+			<h2>Indemnification</h2>
+			<p>Users agree to indemnify and hold the Company harmless from any claims, damages, or expenses arising out of their use of the Service or their violation of this Agreement.</p>
+		</section>
+        <section>
+			<h2>CHanges to Terms and conditions</h2>
+			<p>The Company may revise this Agreement at any time by posting an updated version on the Service. Users should periodically review this Agreement to stay informed of any changes.</p>
+		</section>
+        <section>
+			<h2>Governing Law</h2>
+			<p>This Agreement shall be governed by and construed in accordance with the laws of [State/Province/Country]. Any dispute arising out of or in connection with this Agreement shall be resolved in the courts of [State/Province/Country].</p>
+		</section>
+        <section>
+			<h2>Contact information</h2>
+			<p>If you have any questions about this Agreement, please contact the Company at [Contact Email Address].
+
+                By using the Service, you acknowledge that you have read, understood, and agree to be bound by this Agreement.</p>
+		</section>
+        
+	</main>
+	<script src="script.js"></script>
+</body>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>&copy; 2023 Auxilium. All Rights Reserved.</p>
+        </div>
+        <div class="col-sm-6 text-right">
+          <ul class="list-inline">
+            <li><a href="/privacypage">Privacy Policy</a></li>
+            <li><a href="/termspage">Terms of Use</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+  </footer>
+</html>
