@@ -5,11 +5,10 @@ Auxilium is a first year team project we worked on in a group of six people. The
 
 - An organisation home page
 <img src="auxpics1.png" alt="Description" width="2000"/>
-<img src="auxpics2.png" alt="Description" width="2000"/>
+<img src="auxpics2.jpg" alt="Description" width="2000"/>
 
 - A website to create new events, with locations, description, etc.
 <img src="event1.jpg" alt="Description" width="2000"/>
-
 <img src="darkmode1.png" alt="Description" width="2000"/>
 <img src="getlocation1.png" alt="Description" width="2000"/>
 
