@@ -28,7 +28,7 @@ Security is paramount. Auxilium incorporates Two-Factor Authentication (2FA) thr
 ### 4. Organization Home Page
 The organization home page acts as a central hub, offering a visually appealing and user-friendly interface for various volunteering groups. Organizations can personalize their profiles with images, contacts, names, and descriptions.
 
-![Organization Home Page](auxpics1.png)
+![Organization Home Page](auxpics3.png)
 ![Dark Mode - Organization Home Page](auxpics2.jpg)
 
 ### 5. Event Creation Platform
