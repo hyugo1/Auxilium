@@ -4,6 +4,9 @@
 
 **Auxilium** is an innovative first-year team project undertaken by a dedicated group of six individuals. The mission is to create a cutting-edge volunteering website with features designed to enhance user experience, streamline event organization, and promote community engagement and social impact.
 
+<img src="main1.png" alt="Description" width="2000"/>
+
+
 ## Key Features
 
 ### 1. Organization Home Page
